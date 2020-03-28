@@ -1,7 +1,8 @@
 import React, {
     Component
 } from 'react'
-import D3Chart from './D3Chart';
+import D3Chart from './D3Charts/D3BarChart';
+import D3SunburstChart from './D3Charts/D3SunburstChart';
 
 export default class ChartWrapper extends Component {
 
@@ -12,7 +13,8 @@ export default class ChartWrapper extends Component {
 
     componentDidMount() {
 
-        new D3Chart(this.chart.current)
+        // new D3Chart(this.chart.current)
+        new D3SunburstChart(this.chart.current)
     }
 
     render() {
